@@ -7,11 +7,11 @@
 
 ![image](https://github.com/Natalia-Orlova/Final_2/assets/109914840/02ce9111-979b-4f23-ae1d-6b93b56b33a6)
 
-2. Создать директорию, переместить файл туда.
+## 2. Создать директорию, переместить файл туда.
 
 ![image](https://github.com/Natalia-Orlova/Final_2/assets/109914840/a7e7d29a-b5b9-4453-886f-aa8ef838289e)
 
-3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
+## 3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
 из этого репозитория.
 
 Для установки репозитория MySQL переходим на страницу https://dev.mysql.com/downloads/, где переходим в раздел MySQL APT Repository и копируем ссылку на последний пакет. Далее переходим в терминал и выполняем следующие команды:
@@ -30,7 +30,7 @@
 
 ![image](https://github.com/Natalia-Orlova/Final_2/assets/109914840/ea5faf2e-b152-41e7-9e10-7650dd6d731f)
 
-4. Установить и удалить deb-пакет с помощью dpkg.
+## 4. Установить и удалить deb-пакет с помощью dpkg.
 
 wget https://download.virtualbox.org/virtualbox/7.0.6/virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb
 
@@ -68,4 +68,10 @@ sudo dpkg -r virtualbox-7.0 удалили пакет
   
 ![image](https://github.com/Natalia-Orlova/Final_2/assets/109914840/e0e340ed-8e00-4cf1-9c6a-c5feb87685a8)
 
-5. Выложить историю команд в терминале ubuntu
+
+ ## 5. Выложить историю команд в терминале ubuntu
+  
+![image](https://github.com/Natalia-Orlova/Final_2/assets/109914840/f96dd809-0553-4941-af2d-4b541fa6ab33)
+
+![image](https://github.com/Natalia-Orlova/Final_2/assets/109914840/1ee7fe9e-3d5b-4fd5-9d10-d5e5d58be29c)
+
