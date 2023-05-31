@@ -82,4 +82,4 @@ sudo dpkg -r virtualbox-7.0 удалили пакет
   
 ![Animals drawio](https://github.com/Natalia-Orlova/Final_2/assets/109914840/9b437b36-b119-42e9-9e6b-b0f5bb1e5b66)
 
-** Задания 7 - 12 находятся в фвйле _sql_part_**
+**Задания 7 - 12 находятся в файле** [sql_part](https://github.com/Natalia-Orlova/Final_2/blob/main/sql_part.sql)
