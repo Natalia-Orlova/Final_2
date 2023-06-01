@@ -1,4 +1,7 @@
 package Model;
 
-public class Cat {
+public class Cat extends Pet{
+    public Cat () {
+
+    }
 }
