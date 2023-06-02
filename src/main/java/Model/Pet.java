@@ -2,44 +2,48 @@ package Model;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.List;
 
-public class Pet {
-    protected int ID;
-    protected String name;
-    protected LocalDate birthday;
+public interface Pet {
+    /**
+     * Получить имя животного
+     * @return
+     */
+    String getName();
 
-    public int getID() {
-        return ID;
-    }
+    /**
+     * Установить дату рождения
+     * @param date
+     */
+    void setBirthday(String date);
 
-    public String getName() {
-        return name;
-    }
+    /**
+     * Получить дату рождедния
+     * @return
+     */
+    String getBirthday();
 
-    public LocalDate getBirthdayDate() {
-        return birthday;
-    }
+    /**
+     * Установить имя животного
+     * @param name - новое имя
+     */
+    void setName(String name);
 
-    //преобразование даты к строке
-    public String getBirthday() {
-        SimpleDateFormat myDateFormat = new SimpleDateFormat("dd.MM.yyyy");
-        return myDateFormat.format(birthday);
-    }
+    /**
+     * Обучить животное новой команде
+     * @param newCommand - новая команда
+     */
+    void addCommand(String newCommand);
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
+    /**
+     * Удалить команду
+     * @param command
+     */
+    void removeCommand(String command);
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("%d. name: %s, birthday: %s ", getID(), name, getBirthday());
-    }
+    /**
+     * Список команд
+     * @return
+     */
+    List<String> getCommandList();
 }
