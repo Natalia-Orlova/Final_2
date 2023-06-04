@@ -1,49 +1,118 @@
 package Model;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.List;
+import java.time.format.DateTimeFormatter;
 
-public interface Pet {
+public class Pet {
+    private int id;
+    private String name;
+    private LocalDate birthday;
+    private String commands;
+
+
+//    public Pet(int id, String name, LocalDate birthday, String commands) {
+//        this.id = id;
+//        this.name = name;
+//        this.birthday = birthday;
+//        this.commands = commands;
+//    }
+
     /**
-     * Получить имя животного
+     * Узнать номер id питомца
      * @return
      */
-    String getName();
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * Установить id для питомца
+     * @param id
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * Узнать имя питомца
+     * @return
+     */
+    public String getName() {
+        return this.name;
+    }
+
+    /**
+     * Задать имя питомца
+     * @param name - новое имя
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Узнать дату рождения питомца
+     * @return
+     */
+    public LocalDate getBirthday() {
+        return this.birthday;
+    }
+
+    /**
+     * Узнать дату рождения в формате String
+     * @return
+     */
+    public String getBirthdayString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        return formatter.format(birthday);
+    }
 
     /**
      * Установить дату рождения
      * @param date
      */
-    void setBirthday(String date);
+    public void setBirthday(LocalDate date) {
+        this.birthday = date;
+    }
 
     /**
-     * Получить дату рождедния
+     * Получить список команд, которые выполняет питомец
      * @return
      */
-    String getBirthday();
+    public String getCommandList() {
+        return this.commands;
+    }
 
     /**
-     * Установить имя животного
-     * @param name - новое имя
+     * Задать команды, выполняемые питомцем
+     * @param commands
      */
-    void setName(String name);
+    public void setCommands(String commands) {
+        this.commands = commands;
+    }
 
     /**
-     * Обучить животное новой команде
+     * Обучить новой команде
      * @param newCommand - новая команда
      */
-    void addCommand(String newCommand);
+    public void addCommand(String newCommand) {
+        commands = commands + newCommand;
+        // commands = new StringBuilder(commands).append(newCommand).toString();
+    }
 
     /**
      * Удалить команду
+     *
      * @param command
      */
-    void removeCommand(String command);
+    public void removeCommand(String command) {
+        commands.replace(command, "");
+    }
 
-    /**
-     * Список команд
-     * @return
-     */
-    List<String> getCommandList();
+    @Override
+    public String toString() {
+        return String.format("%d. имя: %s, дата рождения: %s, команды: %s\n",
+                getId(), getName(), getBirthdayString(), getCommandList());
+    }
 }

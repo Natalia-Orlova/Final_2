@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e047ec4f-e2e3-4895-a8cd-3216f5cf96a1" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Services/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Services/PetsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/AnimalCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/PetCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Cat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Hamster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Services/PetsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/PetsList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,20 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Final_2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

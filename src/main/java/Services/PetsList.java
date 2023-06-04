@@ -6,6 +6,7 @@ import java.util.List;
 public class PetsList <Pet> {
     private List<Pet> pets = new ArrayList<>();
 
+
     /**
      * добавить питомца
      *
