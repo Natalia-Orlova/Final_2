@@ -10,8 +10,8 @@ public abstract class PetCreator extends AnimalCreator {
             case Cat -> new Cat();
             case Dog -> new Dog();
             case Hamster -> new Hamster();
-            }
         }
+        return null;
     }
 }
 
