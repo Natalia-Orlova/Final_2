@@ -1,5 +1,6 @@
 package Services;
 
+import Model.AnimalCreator;
 import View.ConsoleView;
 
 import java.time.LocalDate;
@@ -11,6 +12,7 @@ import java.util.Scanner;
 public class PetsList <Pet> {
     Scanner scanner = new Scanner(System.in);
     private List<Pet> pets = new ArrayList<>();
+
 
     /**
      * добавить питомца
@@ -38,18 +40,19 @@ public class PetsList <Pet> {
         return pets;
     }
 
+
     /**
      * Получить питомца из списка питомцев по индексу
      * @param index
      * @return
      */
-    public Pet getPetByIndex(int index) {
-        if (index <= pets.size()) {
-            return pets.get(index);
-        } else {
-            System.out.println("в списке нет питомца с таким id, повторите попытку");
-        }
-    }
+//    public Pet getPetByIndex(int index) {
+//        if (index <= pets.size()) {
+//            return pets.get(index);
+//        } else {
+//            System.out.println("в списке нет питомца с таким id, повторите попытку");
+//        }
+//    }
 
 
 }

@@ -1,5 +1,7 @@
 package Model;
 
+import View.ConsoleView;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -11,6 +13,7 @@ public class Pet {
     private String name;
     private String birthday;
     private String commands;
+//    private String petType;
 
     static Scanner sc = new Scanner(System.in);
 
@@ -21,6 +24,12 @@ public class Pet {
         this.name = name;
         this.birthday = birthday;
         this.commands = commands;
+//        this.petType = petType;
+    }
+
+    public static Pet createNewPet () {
+        return new Pet(ConsoleView.getId(), ConsoleView.getName(),
+                ConsoleView.getBirthday(), ConsoleView.getCommands());
     }
 
     /**

@@ -1,8 +1,6 @@
 package Controller;
 
-import Model.AnimalCreator;
-import Model.Pet;
-import Model.PetType;
+import Model.*;
 import Services.PetsList;
 import View.ConsoleView;
 import View.Menu;
@@ -25,14 +23,38 @@ public class Controller {
                 switch (key) {
                     case "1":
                        // завести нового питомца
-                        pets.addPet(AnimalCreator.createPet());
+                        System.out.println("Выберите вид питомца: \n");
+                        Menu.petsMenu();
+                        String key1 = in.next();
+                        switch(key1) {
+                            case "1":
+                                pets.addPet(AnimalCreator.createPet());
+                                System.out.println("Кот (кошка) добавлен(а) в список питомцев");
+                                continue;
+                            case "2":
+                                pets.addPet(AnimalCreator.createPet());
+                                System.out.println("Собака добавлена в список питомцев");
+                                continue;
+                            case "3":
+                                pets.addPet(AnimalCreator.createPet());
+                                System.out.println("Хомяк добавлен в список питомцев");
+                                continue;
+                            case "0":
+                                continue;
+                            default:
+                                System.out.println("Такой команды нет");
+                                break;
+                        }
+                        pets.addPet(Pet.createNewPet());
+                        //pets.addPet(Cat.createNewPet());
+                        //pets.addPet(AnimalCreator.createPet());
                         break;
                     case "2":
                         // Добавить новую команду
                         // показать список всех животных и выбрать из списка того, кому добавить команду
                         ConsoleView.printPetsList(pets);
                         System.out.println("Введите номер питомца для добавления команды: ");
-                        pets.getPetByIndex(scanner.nextInt());
+                        //pets.getPetByIndex(scanner.nextInt());
                         break;
                     case "3":
                         // Показать всех питомцев

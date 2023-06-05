@@ -47,14 +47,11 @@ public class ConsoleView {
         return scanner.nextLine();
     }
 
+
     public static void printPetsList(PetsList pets) {
         System.out.println("Список питомцев: ");
         for (Object pet : pets.getPets()) {
             System.out.println(pet + "\n");
         }
-    }
-
-    public void showMessage(String message) {
-        System.out.println(message);
     }
 }

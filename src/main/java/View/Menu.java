@@ -9,12 +9,12 @@ public class Menu {
         System.out.println("0 - Выход");
     }
 
-//    public static void petsMenu(){
-//        System.out.println("1 - Кот");
-//        System.out.println("2 - Собака");
-//        System.out.println("3 - Хомяк");
-//        System.out.println("0 - Отмена");
-//    }
+    public static void petsMenu(){
+        System.out.println("1 - Кот");
+        System.out.println("2 - Собака");
+        System.out.println("3 - Хомяк");
+        System.out.println("0 - Отмена");
+    }
 
     private void choiceMenu (){
         System.out.println("1 - Yes");
