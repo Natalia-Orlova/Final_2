@@ -1,9 +1,15 @@
 package Services;
 
+import View.ConsoleView;
+
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
 
 public class PetsList <Pet> {
+    Scanner scanner = new Scanner(System.in);
     private List<Pet> pets = new ArrayList<>();
 
     /**
@@ -11,7 +17,7 @@ public class PetsList <Pet> {
      *
      * @param pet
      */
-    public void addAnimal(Pet pet) {
+    public void addPet(Pet pet) {
         pets.add(pet);
     }
 
@@ -31,4 +37,19 @@ public class PetsList <Pet> {
     public List<Pet> getPets(){
         return pets;
     }
+
+    /**
+     * Получить питомца из списка питомцев по индексу
+     * @param index
+     * @return
+     */
+    public Pet getPetByIndex(int index) {
+        if (index <= pets.size()) {
+            return pets.get(index);
+        } else {
+            System.out.println("в списке нет питомца с таким id, повторите попытку");
+        }
+    }
+
+
 }

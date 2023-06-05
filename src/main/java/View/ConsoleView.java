@@ -1,51 +1,59 @@
 package View;
 
 import Model.Pet;
+import Services.PetsList;
 
 import java.util.List;
 import java.util.Scanner;
 
-public class ConsoleView implements View <Pet> {
+public class ConsoleView {
 
-    Scanner in;
+    static Scanner scanner = new Scanner(System.in);
 
-    public ConsoleView() {
-        in = new Scanner(System.in, "ibm866");
+    public static int getId() {
+        System.out.print("Ведите id питомца: ");
+        if (!scanner.hasNextInt()) {
+            System.out.println("Введено некорректное значение, повторите попытку");
+            scanner.nextLine();
+        }
+        return scanner.nextInt();
     }
 
-    @Override
-    public String getName() {
-        System.out.print("Имя питомца: ");
-        return in.nextLine();
+    public static String getName() {
+        System.out.print("Ведите имя питомца: ");
+        if (!scanner.hasNextLine()) {
+            System.out.println("Введено некорректное значение, повторите попытку");
+            scanner.nextLine();
+        }
+        scanner.nextLine();
+        return scanner.nextLine();
     }
 
-    @Override
-    public String getBirthday() {
+    public static String getBirthday() {
         System.out.print("Введите дату рождения в формате '01.01.2001': ");
-        return in.nextLine();
+        if (!scanner.hasNextLine()) {
+            System.out.println("Введено некорректное значение, повторите попытку");
+            scanner.nextLine();
+        }
+        return scanner.nextLine();
     }
 
-    @Override
-    public String getCommands() {
+    public static String getCommands() {
         System.out.print("Введите команды, выполняемые питомцем: ");
-        return in.nextLine();
+        if (!scanner.hasNextLine()) {
+            System.out.println("Введено некорректное значение, повторите попытку");
+            scanner.nextLine();
+        }
+        return scanner.nextLine();
     }
 
-    @Override
-    public <T> void printAll (List<T> list, Class <T> petClass) {
-        System.out.print("\033[H\033[J");
-        if (list.isEmpty())
-            System.out.println("В списке пока нет питомцев");
-        else {
-            if (petClass == Pet.class)
-                System.out.println("\nСписок питомцев:");
-            for (T item : list) {
-                System.out.println(item);
-            }
+    public static void printPetsList(PetsList pets) {
+        System.out.println("Список питомцев: ");
+        for (Object pet : pets.getPets()) {
+            System.out.println(pet + "\n");
         }
     }
 
-    @Override
     public void showMessage(String message) {
         System.out.println(message);
     }

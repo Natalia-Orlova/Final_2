@@ -3,10 +3,14 @@ import Model.Cat;
 import Model.Dog;
 import Model.Hamster;
 import Model.Pet;
+import Services.PetsList;
+import View.ConsoleView;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +22,15 @@ public class Main {
 //
 //        System.out.println(pets);
 
-        Controller.buttonClick();
+       Controller.buttonClick();
+//        Scanner sc = new Scanner(System.in);
+//        PetsList<Pet> list = new PetsList<>();
+//
+//        Pet pet = new Pet(ConsoleView.getId(), ConsoleView.getName(), ConsoleView.getBirthday(), ConsoleView.getCommands());
+//        list.addPet(pet);
+//
+//        System.out.println(list);
+
 
     }
 

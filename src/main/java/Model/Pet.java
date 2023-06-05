@@ -4,20 +4,24 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 public class Pet {
     private int id;
     private String name;
-    private LocalDate birthday;
+    private String birthday;
     private String commands;
 
+    static Scanner sc = new Scanner(System.in);
 
-//    public Pet(int id, String name, LocalDate birthday, String commands) {
-//        this.id = id;
-//        this.name = name;
-//        this.birthday = birthday;
-//        this.commands = commands;
-//    }
+
+    public Pet(int id, String name, String birthday, String commands) {
+
+        this.id = id;
+        this.name = name;
+        this.birthday = birthday;
+        this.commands = commands;
+    }
 
     /**
      * Узнать номер id питомца
@@ -55,24 +59,24 @@ public class Pet {
      * Узнать дату рождения питомца
      * @return
      */
-    public LocalDate getBirthday() {
+    public String getBirthday() {
         return this.birthday;
     }
 
-    /**
-     * Узнать дату рождения в формате String
-     * @return
-     */
-    public String getBirthdayString() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
-        return formatter.format(birthday);
-    }
+//    /**
+//     * Узнать дату рождения в формате String
+//     * @return
+//     */
+//    public String getBirthdayString() {
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+//        return formatter.format(birthday);
+//    }
 
     /**
      * Установить дату рождения
      * @param date
      */
-    public void setBirthday(LocalDate date) {
+    public void setBirthday(String date) {
         this.birthday = date;
     }
 
@@ -113,6 +117,6 @@ public class Pet {
     @Override
     public String toString() {
         return String.format("%d. имя: %s, дата рождения: %s, команды: %s\n",
-                getId(), getName(), getBirthdayString(), getCommandList());
+                getId(), getName(), getBirthday(), getCommandList());
     }
 }

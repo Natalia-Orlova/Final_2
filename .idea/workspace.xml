@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e047ec4f-e2e3-4895-a8cd-3216f5cf96a1" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/ConsoleView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PetCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/PetCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/AnimalCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/AnimalCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Hamster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PetCreator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Services/PetsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/PetsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ConsoleView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/View.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
