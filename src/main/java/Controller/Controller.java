@@ -28,15 +28,15 @@ public class Controller {
                         String key1 = in.next();
                         switch(key1) {
                             case "1":
-                                pets.addPet(AnimalCreator.createPet());
+                                pets.addPet(PetCreator.createPet());
                                 System.out.println("Кот (кошка) добавлен(а) в список питомцев");
                                 continue;
                             case "2":
-                                pets.addPet(AnimalCreator.createPet());
+                                pets.addPet(PetCreator.createPet());
                                 System.out.println("Собака добавлена в список питомцев");
                                 continue;
                             case "3":
-                                pets.addPet(AnimalCreator.createPet());
+                                pets.addPet(PetCreator.createPet());
                                 System.out.println("Хомяк добавлен в список питомцев");
                                 continue;
                             case "0":
@@ -62,7 +62,7 @@ public class Controller {
                         ConsoleView.printPetsList(pets);
                         break;
                     case "4":
-                        // Показать команды
+                        // Показать команды питомца
                         ConsoleView.printPetsList(pets);
                         System.out.println("Выберите номер питомца для просмотра команд: ");
                         int id1 = in.nextInt();

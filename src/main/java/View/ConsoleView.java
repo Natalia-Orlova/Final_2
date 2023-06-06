@@ -29,12 +29,20 @@ public class ConsoleView {
 
     public static String setBirthday() {
         System.out.print("Введите дату рождения в формате '01.01.2001': ");
-        if (!scanner.hasNextLine()) {
+        if (!scanner.hasNext()) {
             System.out.println("Введено некорректное значение, повторите попытку");
             scanner.nextLine();
         }
         return scanner.nextLine();
     }
+
+//    try{
+//        String stringDate="01/12/1995";
+//        Date date=new SimpleDateFormat("dd/MM/yyyy").parse(stringDate);
+//        System.out.println("Date is : "+date);
+//    }catch(Exception e){
+//        System.out.println(e);
+//    }
 
     public static String setCommands() {
         System.out.print("Введите команды, выполняемые питомцем: ");

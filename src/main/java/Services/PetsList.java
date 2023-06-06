@@ -1,12 +1,7 @@
 package Services;
 
-import Model.AnimalCreator;
-import View.ConsoleView;
-
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class PetsList <Pet> {
