@@ -2,8 +2,6 @@ package Model;
 
 import View.ConsoleView;
 
-import java.io.Console;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,9 +17,10 @@ public abstract class AnimalCreator {
 //        return pet;
 //    }
 
-    private static List<Pet> pets = new ArrayList<>();
+    private static final List<Pet> pets = new ArrayList<>();
     public static Pet createPet () {
-        return new Pet(pets.size()+1, ConsoleView.getName(),
-                ConsoleView.getBirthday(), ConsoleView.getCommands());
+
+        return new Pet(ConsoleView.getId(), ConsoleView.setName(),
+                ConsoleView.setBirthday(), ConsoleView.setCommands());
     }
 }

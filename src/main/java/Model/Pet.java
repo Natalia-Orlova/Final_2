@@ -2,10 +2,6 @@ package Model;
 
 import View.ConsoleView;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Pet {
@@ -28,8 +24,8 @@ public class Pet {
     }
 
     public static Pet createNewPet () {
-        return new Pet(ConsoleView.getId(), ConsoleView.getName(),
-                ConsoleView.getBirthday(), ConsoleView.getCommands());
+        return new Pet(ConsoleView.getId(), ConsoleView.setName(),
+                ConsoleView.setBirthday(), ConsoleView.setCommands());
     }
 
     /**
@@ -40,13 +36,6 @@ public class Pet {
         return id;
     }
 
-    /**
-     * Установить id для питомца
-     * @param id
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
 
     /**
      * Узнать имя питомца

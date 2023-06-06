@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class PetsList <Pet> {
     Scanner scanner = new Scanner(System.in);
-    private List<Pet> pets = new ArrayList<>();
+    public List<Pet> pets = new ArrayList<>();
 
 
     /**
@@ -21,6 +21,7 @@ public class PetsList <Pet> {
      */
     public void addPet(Pet pet) {
         pets.add(pet);
+        Counter.add();
     }
 
     /**
@@ -46,13 +47,10 @@ public class PetsList <Pet> {
      * @param index
      * @return
      */
-//    public Pet getPetByIndex(int index) {
-//        if (index <= pets.size()) {
-//            return pets.get(index);
-//        } else {
-//            System.out.println("в списке нет питомца с таким id, повторите попытку");
-//        }
-//    }
-
-
+    public Pet getPetByIndex(int index) {
+        if (!pets.contains(index)) {
+            System.out.println("Нет питомца с таким id, повторите попытку");
+        }
+        return pets.get(index);
+    }
 }
