@@ -48,9 +48,7 @@ public class PetsList <Pet> {
      * @return
      */
     public Pet getPetByIndex(int index) {
-        if (!pets.contains(index)) {
-            System.out.println("Нет питомца с таким id, повторите попытку");
-        }
-        return pets.get(index);
+
+        return pets.get(index - 1);
     }
 }

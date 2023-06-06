@@ -9,11 +9,13 @@ import java.util.Scanner;
 public class ConsoleView {
 
     static Scanner scanner = new Scanner(System.in);
+    private static PetsList<Pet> pets = new PetsList<>();
     private static int id;
 
 
     public static int getId() {
-        return id++;
+        id = id + 1;
+        return id;
     }
 
     public static String setName() {
@@ -52,4 +54,5 @@ public class ConsoleView {
         }
         System.out.println();
     }
+
 }

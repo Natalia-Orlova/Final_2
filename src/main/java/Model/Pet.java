@@ -99,7 +99,7 @@ public class Pet {
      * @param newCommand - новая команда
      */
     public void addCommand(String newCommand) {
-        commands = commands + newCommand;
+        commands = commands + ", " + newCommand;
         // commands = new StringBuilder(commands).append(newCommand).toString();
     }
 
@@ -114,7 +114,7 @@ public class Pet {
 
     @Override
     public String toString() {
-        return String.format("%d. имя: %s, дата рождения: %s, команды: %s\n",
+        return String.format("%d. имя: %s; дата рождения: %s; команды: %s\n",
                 getId(), getName(), getBirthday(), getCommandList());
     }
 }

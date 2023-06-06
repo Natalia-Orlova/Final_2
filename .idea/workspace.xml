@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/AnimalCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/AnimalCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/Counter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Services/PetsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/PetsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/ConsoleView.java" afterDir="false" />
     </list>
